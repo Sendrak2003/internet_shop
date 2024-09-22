@@ -1,0 +1,266 @@
+@import "@fortawesome/fontawesome-free/css/all.css";
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    color: #BFC8D6;
+    background-image: url("../images/msg361228366-66662 (1).jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    font-family: "Lato", sans-serif;
+}
+.alert-errors{
+    display: none;
+    background: tomato;
+    color: black;
+    padding: 10px;
+}
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+
+
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav li.active {
+    background-color: rgba(0, 0, 255, 0.5);
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+h1,h2{
+    margin: 0;
+}
+
+.main {
+    margin-left: 160px;
+    font-size: 28px;
+
+
+}
+table {
+    height: 100%;
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    background-color: #111;
+}
+tr:hover {
+    background-color: #111;
+}
+
+.myBtn {
+    color: #fff;
+    text-decoration: none;
+    background: #665cf6;
+    display: inline-block;
+    padding: 14px 30px;
+    border: 1px solid black;
+    position: relative;
+    z-index: 0;
+    border-radius: 60px;
+    box-sizing: border-box;
+    margin:  15px;
+    outline: none;
+    cursor: pointer;
+    user-select: none;
+    appearance: none;
+    touch-action: manipulation;
+}
+
+.myBtn:before {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    background-color: transparent;
+    z-index: -2;
+    transition: .4s;
+    border-radius: 60px;
+}
+
+.myBtn:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:#5559AB;
+    z-index: -1;
+    transition: .4s;
+    border-radius: 60px;
+}
+
+.myBtn:hover {
+    color: #fff;
+    transition: .3s;
+}
+
+.myBtn:hover:after {
+    background: linear-gradient(90deg, black, black);
+    border: 1px solid #665cf6;
+    transition: .3s;
+}
+
+.myBtn:active:after {
+    background: linear-gradient(90deg, #665cf6, #665cf6);
+    border: 1px solid #fff;
+    transition: .4s;
+}
+
+.myBtn:focus-visible {
+    box-shadow: 0 0 0 3px lightskyblue;
+}
+
+.myBtn:disabled {
+    pointer-events: none;
+}
+
+.myBtn:disabled:before {
+    filter: grayscale(100%);
+}
+.previews-product-conteiner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.previews-product {
+    color: black;
+    background-color: white;
+    margin: 50px 10px;
+}
+
+.welcome_ms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.8;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+    position: fixed;
+
+}
+.overlay_popup {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: #000;
+    opacity: 0.8;
+}
+
+.container-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: black;
+    border: 1px solid #665cf6;
+    opacity: 1;
+    z-index: 1000;
+}
+.form-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px; /* Добавьте нужный отступ между блоками, если это необходимо */
+}
+
+.form-group label {
+    flex: 1; /* Растягиваем метку на всю доступную ширину */
+    margin-right: 10px; /* Добавьте нужный отступ между меткой и полем ввода */
+}
+
+.form-group input {
+    flex: 2; /* Растягиваем поле ввода на два раза больше метки */
+}
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.close-btn {
+    cursor: pointer;
+    font-size: 18px;
+    color: #ffffff;
+    margin-left: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+    .welcome_ms{overflow: scroll; }
+}
